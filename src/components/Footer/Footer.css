@@ -1,0 +1,143 @@
+.footerContainer {
+  background-color: #f3f2f2;
+}
+
+.footerWrap {
+  padding: 48px 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footerLinksWrapper {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerLinkItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  width: 160px;
+  box-sizing: border-box;
+  color: #090909;
+}
+
+.footerLinkTitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.footerLink {
+  font-size: 16px;
+  color: #090909;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.footerLink:hover {
+  color: #008799;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.footerLinkIcons {
+  font-size: 16px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.socialMediaWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.websiteRights {
+  color: #090909;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 820px) {
+  .footerLinksContainer {
+    padding-top: 32px;
+  }
+
+  .footerWrap,
+  .footerLinksWrapper {
+    flex-direction: column;
+  }
+
+  .footerLinksWrapper,
+  .footerLinkItems {
+    align-items: center;
+  }
+
+  .socialMediaWrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footerLinksWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footerLinkItems {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .contactIcon {
+    width: 325px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .footerContainer {
+    background-color: #fafafa;
+  }
+  .footerLinkItems,
+  .footerLink {
+    color: #090909;
+  }
+  .footerLink:hover {
+    color: #008799;
+  }
+  .websiteRights {
+    color: #090909;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .footerContainer {
+    background-color: #090909;
+  }
+  .footerLinkItems,
+  .footerLink {
+    color: #fafafa;
+  }
+  .footerLink:hover {
+    color: #0090a3;
+  }
+  .websiteRights {
+    color: #fafafa;
+  }
+}

@@ -1,0 +1,112 @@
+#logo {
+  fill: transparent;
+  animation: fill-anim 0.5s ease forwards 4s;
+}
+
+path:nth-child(2) {
+  stroke-dasharray: 442;
+  stroke-dashoffset: 442;
+  animation: line-anim 2s ease forwards;
+}
+path:nth-child(3) {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+path:nth-child(4) {
+  stroke-dasharray: 494;
+  stroke-dashoffset: 494;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+path:nth-child(5) {
+  stroke-dasharray: 535;
+  stroke-dashoffset: 535;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+path:nth-child(6) {
+  stroke-dasharray: 490;
+  stroke-dashoffset: 490;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+path:nth-child(7) {
+  stroke-dasharray: 297;
+  stroke-dashoffset: 297;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+path:nth-child(8) {
+  stroke-dasharray: 494;
+  stroke-dashoffset: 494;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+path:nth-child(9) {
+  stroke-dasharray: 535;
+  stroke-dashoffset: 535;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+path:nth-child(10) {
+  stroke-dasharray: 490;
+  stroke-dashoffset: 490;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+path:nth-child(11) {
+  stroke-dasharray: 535;
+  stroke-dashoffset: 535;
+  animation: line-anim 2s ease forwards 2.7s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #00e1ff;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #logo {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #logo {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #logo {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #logo {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #logo {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #logo {
+    width: 150px;
+  }
+}

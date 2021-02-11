@@ -1,0 +1,6 @@
+Dark: 
+	primary: #00e1ff
+	secondary: #FF1E00
+	text: #002d33
+	background: #f5feff
+	shades of primary(light to dark): #ccf9ff, #99f3ff, #66edff, #33e7ff, #00b4cc, #008799, #005a66, #002d33.

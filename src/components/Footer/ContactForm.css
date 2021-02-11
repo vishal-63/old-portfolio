@@ -1,0 +1,135 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameEmailWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.contactFormElement {
+  color: #000;
+  padding: 8px 14px;
+  margin: 10px 0;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #008799;
+}
+
+.contactFormName {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.contactFormEmail {
+  width: 100%;
+}
+
+.contactFormMessage {
+  width: 500px;
+}
+
+.contactFormBtn {
+  font-size: 16px;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #008799;
+  color: #090909;
+  border: 1.5px solid #008799;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactFormBtn:hover {
+  color: #008799;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 960px) {
+  .nameEmailWrapper,
+  .contactFormMessage {
+    width: 450px;
+  }
+
+  .contactFormName {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .nameEmailWrapper,
+  .contactFormMessage {
+    width: 400px;
+  }
+
+  .contactFormName {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .nameEmailWrapper,
+  .contactFormMessage {
+    width: 350px;
+  }
+
+  .contactFormName {
+    width: 90px;
+  }
+
+  .contactFormElement {
+    padding: 6px;
+    margin: 5px 0;
+  }
+
+  .contactFormName {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nameEmailWrapper,
+  .contactFormMessage {
+    width: 270px;
+  }
+  .nameEmailWrapper {
+    flex-direction: column;
+  }
+
+  .contactFormName {
+    width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .contactFormElement {
+    border: 1px solid #008799;
+  }
+  .contactFormBtn {
+    background-color: #008799;
+    border-color: #008799;
+    color: #090909;
+  }
+  .contactFormBtn:hover {
+    color: #008799;
+    background-color: transparent;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .contactFormElement {
+    border: none;
+  }
+  .contactFormBtn {
+    background-color: #0090a3;
+    border-color: #0090a3;
+  }
+  .contactFormBtn:hover {
+    color: #00b4cc;
+  }
+}
