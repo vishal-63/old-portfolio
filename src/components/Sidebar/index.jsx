@@ -9,6 +9,7 @@ import {
   SideBtnWrap,
   SidebarRoute,
 } from "./SidebarElements";
+import PDF from "../../Resume.pdf";
 
 const Sidebar = ({ isOpen, toggle }) => {
   let darkTheme = true;
@@ -74,7 +75,13 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/" onClick={toggle} darkTheme={darkTheme}>
+          <SidebarRoute
+            to={PDF}
+            target="_blank"
+            rel="noreferrer"
+            onClick={toggle}
+            darkTheme={darkTheme}
+          >
             Resume
           </SidebarRoute>
         </SideBtnWrap>
