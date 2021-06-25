@@ -100,12 +100,6 @@ export const HeroP = styled.p`
   }
 `;
 
-export const HeroH1 = styled.div`
-  @media screen and (max-width: 960px) {
-    width: 800px;
-  }
-`;
-
 export const HeroWebDev = styled.p`
   font-size: 3.5rem;
   color: #008799;
