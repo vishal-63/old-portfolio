@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import PDF from "../../Resume.pdf";
+import { Link } from "react-router-dom";
 import {
   Nav,
   NavbarContainer,

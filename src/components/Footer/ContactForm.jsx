@@ -26,6 +26,7 @@ export default class ContactForm extends React.Component {
               value={this.state.name}
               placeholder="Name"
               className="contactFormElement contactFormName"
+              required
             />
             <input
               type="email"
@@ -35,6 +36,7 @@ export default class ContactForm extends React.Component {
               value={this.state.email}
               placeholder="Email"
               className="contactFormElement contactFormEmail"
+              required
             />
           </div>
           <input
@@ -45,6 +47,7 @@ export default class ContactForm extends React.Component {
             value={this.state.subject}
             placeholder="Subject"
             className="contactFormElement contactFormMessage"
+            required
           />
           <textarea
             id="message"
@@ -55,6 +58,7 @@ export default class ContactForm extends React.Component {
             required
             value={this.state.message}
             className="contactFormElement contactFormMessage"
+            required
           />
           <input
             type="button"
@@ -87,12 +91,39 @@ export default class ContactForm extends React.Component {
     const serviceId = "service_vy93ca1";
     const templateId = "template_s9u9v4y";
 
-    this.sendMessage(serviceId, templateId, {
-      subject: this.state.subject,
-      message: this.state.message,
-      from_name: this.state.name,
-      reply_to: this.state.email,
-    });
+    let error = [];
+
+    if (this.state.name === "") {
+      error += "name";
+      document.getElementsByName("name")[0].placeholder =
+        "Please fill this field";
+    }
+    if (this.state.email === "") {
+      error += "email";
+      document.getElementsByName("email")[0].placeholder =
+        "Please fill this field";
+    }
+    if (this.state.subject === "") {
+      error += "subject";
+      document.getElementsByName("subject")[0].placeholder =
+        "Please fill this field";
+    }
+    if (this.state.message === "") {
+      error += "message";
+      document.getElementsByName("message")[0].placeholder =
+        "Please fill this field";
+    }
+
+    if (error == "") {
+      this.sendMessage(serviceId, templateId, {
+        subject: this.state.subject,
+        message: this.state.message,
+        from_name: this.state.name,
+        reply_to: this.state.email,
+      });
+    } else {
+      console.log(error);
+    }
   }
 
   resetForm() {

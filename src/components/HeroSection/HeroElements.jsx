@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 723.5px;
+  height: 100vh;
   z-index: 1;
 
   @media screen and (max-width: 768px) {
@@ -57,7 +57,7 @@ export const HeroBg = styled.div`
 `;
 
 export const VideoBg = styled.video`
-  height: 900px;
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -74,7 +74,7 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   max-width: 900px;
-  position: absolute:
+  position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -101,9 +101,9 @@ export const HeroP = styled.p`
 `;
 
 export const HeroH1 = styled.div`
-  // @media screen and (max-width: 960px) {
-  //   width: 800px;
-  // }
+  @media screen and (max-width: 960px) {
+    width: 800px;
+  }
 `;
 
 export const HeroWebDev = styled.p`

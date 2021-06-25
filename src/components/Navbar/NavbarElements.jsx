@@ -116,7 +116,7 @@ export const NavBtn = styled.div`
   display: flex;
   align-items: start;
 
-  media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

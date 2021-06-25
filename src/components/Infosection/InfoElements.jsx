@@ -18,7 +18,7 @@ export const InfoWrapper = styled.div`
   height: 830px;
   width: 100%;
   max-width: 1100px;
-  margin: 80px auto 0 auto;
+  margin: 0 auto;
   padding: 0 24px;
   justify-content: center;
 
@@ -61,7 +61,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: ${({ darkTheme }) => (darkTheme ? "#00e1ff" : "#0090a3")};
-  font:size: 16px;
+  font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
